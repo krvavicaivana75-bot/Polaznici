@@ -1,13 +1,14 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class EvidencijaKorisnika {
-    private ArrayList<Polaznik> polaznici;
+    private HashSet<Polaznik> polaznici;
 
-    public EvidencijaKorisnika(ArrayList<Polaznik> polaznici) {
+    public EvidencijaKorisnika(HashSet<Polaznik> polaznici) {
         this.polaznici = polaznici;
     }
 
-    public void unosPolaznika(ArrayList<Polaznik> p,String ime,String prezime,String email){
+    public void unosPolaznika(HashSet<Polaznik> p,String ime,String prezime,String email){
         p.add(new Polaznik(ime,prezime,email));
 
 

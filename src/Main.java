@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String...args){
         Scanner ulaz=new Scanner(System.in);
         boolean uvjet=true;
-        ArrayList<Polaznik> listaPolaznika = new ArrayList<>();
+        /*List<Polaznik> listaPolaznika = new ArrayList<>();*/
+        HashSet<Polaznik> listaPolaznika = new HashSet<>();
 
         EvidencijaKorisnika evidencijaKorisnika = new EvidencijaKorisnika(listaPolaznika);
         while(uvjet) {
