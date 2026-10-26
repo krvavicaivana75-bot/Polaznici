@@ -5,15 +5,15 @@ public class Main {
         Scanner ulaz=new Scanner(System.in);
         boolean uvjet=true;
         /*List<Polaznik> listaPolaznika = new ArrayList<>();*/
-        HashSet<Polaznik> listaPolaznika = new HashSet<>();
-
-        EvidencijaKorisnika evidencijaKorisnika = new EvidencijaKorisnika(listaPolaznika);
+        /*HashSet<Polaznik> listaPolaznika = new HashSet<>();*/
+        Map<String, Polaznik> mapaPolaznika = new HashMap<>();
+        EvidencijaKorisnika evidencijaKorisnika = new EvidencijaKorisnika(mapaPolaznika);
         while(uvjet) {
             System.out.println("Unesite ime, prezime i e-mail adresu odvojeno razmakom");
             String pol = ulaz.nextLine();
             String[] dijelovi = pol.split(" ");
             if(dijelovi.length==3){
-                evidencijaKorisnika.unosPolaznika(listaPolaznika,dijelovi[0],dijelovi[1],dijelovi[2]);
+                evidencijaKorisnika.unosPolaznika(dijelovi[0],dijelovi[1],dijelovi[2]);
 
 
             }else{
