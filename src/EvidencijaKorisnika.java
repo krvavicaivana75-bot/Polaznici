@@ -25,4 +25,9 @@ public class EvidencijaKorisnika {
             }
         }
     }
+    /*public int duplikati(){
+        for(int i=0;i<this.polaznici;i++){
+
+        }*/
+
 }

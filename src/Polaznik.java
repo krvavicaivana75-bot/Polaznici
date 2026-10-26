@@ -1,3 +1,5 @@
+import static java.util.Objects.hash;
+
 public class Polaznik {
     private String ime;
     private String prezime;
@@ -28,4 +30,16 @@ public class Polaznik {
     public void ispis(){
        System.out.println("ime: "+ime+"\nprezime: "+prezime+"\ne-mail: "+emailAdresa);
    }
+
+    @Override
+    public int hashCode() {
+        return emailAdresa.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        Polaznik p = (Polaznik) obj;
+        return emailAdresa.equals(p.emailAdresa);
+    }
 }
